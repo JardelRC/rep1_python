@@ -20,6 +20,8 @@ elif(tipo_problema == 3):
 elif(tipo_problema == 2):
     nivel_problema = "Médio"
     print("Problema: simples, que não impede trabalho // Prioridade: Média")
-else:
+elif(tipo_problema == 1):
     nivel_problema = "Baixo"
     print("Outros problemas // Prioridade: Baixa")
+else:
+    print("Os dados do problema parecem errados. Tente novamente.")

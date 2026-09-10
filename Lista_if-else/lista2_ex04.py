@@ -7,10 +7,12 @@ cadastro = str(input("O/A aluno/a está cadastrado/a? (S/N) "))
 # Saídas
 if(cadastro == "N"):
     print(f"O/A aluno/a {aluno} não possui cadastro no laboratório. Logo, acesso não permitido.")
-else:
+elif(cadastro == "S"):
     if(idade >= 18):
         print(f"O/A aluno/a {aluno} tem acesso permitido a esse laboratório.")
     elif(idade >= 14):
         print(f"O/A aluno/a {aluno} tem acesso permitido a esse laboratório.")
     else:
         print(f"O/A aluno/a {aluno} tem acesso permitido a esse laboratório, apenas com a presença de um acompanhante.")
+else:
+    print("Os dados de confirmação do cadastro parecem errados. Tente novamente.")

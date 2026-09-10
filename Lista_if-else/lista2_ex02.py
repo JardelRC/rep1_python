@@ -1,9 +1,9 @@
 ## Exercício 2: Controle de estoque
-# Entradas
+# Entradas:
 produto = str(input("Digite o nome do produto:"))
 qtd = int(input("Quantos desse produto ainda estão no estoque? "))
 
-# Saídas
+# Saídas:
 print(f"O produto {produto} está com estoque de {qtd} unidades. Logo,")
 if(qtd > 20):
     print("Estoque normal")
