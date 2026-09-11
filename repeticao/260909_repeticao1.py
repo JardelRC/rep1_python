@@ -4,7 +4,6 @@ for numero in range(10, 0, -1):
     print(numero)
 print("Fim da contagem")
 
-print()
 # Para verificar uma divisão exata (resto = 0):
 for numero in range(1, 31):
     if numero % 3 == 0:
