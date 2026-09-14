@@ -23,32 +23,30 @@ if(opcao_menu == 1):
         if(codigo == ""):
             print("Código inválido. Reinicie a operação.")
         else:
-            print("Código:", codigo)
-
             titulo = str(input("Digite o título do livro: "))
             if(titulo == ""):
                 print("Título vazio, reinicie a operação")
             else:
-                print("Título: ", titulo)
-
                 autor = str(input("Digite o nome do(s) autor(es): "))
                 if(autor == ""):
                     print("Autor não identificado, reinicie a operação")
                 else:
-                    print("Autor(es): ", autor)
-
                     ano_publicacao = int(input("Digite o ano de publicação: "))
                     if(ano_publicacao > 2026):
                         print("Reinicie a operação, viajante do futuro!!")
-                    else:
-                        print("Ano de publicação: ", ano_publicacao)
-
+                    else:                        
                         qtd_cadastro = int(input("Quantos exemplares estão disponíveis? "))
                         if(qtd_cadastro > 0):
                             print("Quantidade: ", qtd_cadastro)
                             print("Livro cadastrado com sucesso!")
+                            print(f"Livro #{numero}: {codigo} - {titulo}")
+                            print("Autor: ", autor)
+                            print("Ano: ", ano_publicacao)
+                            print("Disponíveis: ", qtd_cadastro)
+                            print()
                         else:
                             print("Não posso cadstrar zero livros. Reinicie a operação.")
+                            print()
     print("Operação concluída! Reinicie para outras operações.")
 
 # Parte 2: Cadastro de alunos
@@ -62,20 +60,19 @@ elif(opcao_menu == 2):
         if(matricula == ""):
             print("Matrícula inválida. Reinicie a operação.")
         else:
-            print("Matricula:", matricula)
-
             nome_aluno = str(input("Digite o nome completo do/a aluno/a: "))
             if(nome_aluno == ""):
                 print("Aluno desconhecido, reinicie a operação")
             else:
-                print("Nome: ", nome_aluno)
-            
                 curso = str(input("Digite o nome do curso em que ele/a está matruculado/a: "))
                 if(curso == ""):
                     print("Curso não identificado, reinicie a operação")
                 else:
+                    print("Matricula:", matricula)
+                    print("Nome: ", nome_aluno)
                     print("Curso: ", curso)
                     print("Aluno cadastrado!")
+                    print()
     print("Operação concluída! Reinicie para outras operações.")
 
 # Parte 3: Empréstimo de livro
@@ -86,18 +83,20 @@ elif(opcao_menu == 3):
     if(codigo == ""):
         print("Código inválido, reinicie a operação.")
     else:
-        print("Código do livro: ", codigo)
-
         matricula = str(input("Insira o número de matrícula: "))
         if(matricula == ""):
             print("Matrícula inválida. Reinicie a operação.")
         else:
-            print("Matrícula: ", matricula)
             qtd_cadastro = int(input("Quantos livros estão disponíveis? "))
             if(qtd_cadastro > 0):
+                print("Código do livro: ", codigo)
+                print("Matrícula: ", matricula)
+                print("Quantidades disponíveis: ", qtd_cadastro)
                 print("Empréstimo realizado com sucesso!")
+                print()
             else:
                 print("Não é possível realizar o empréstimo. Não há exempçares disponíveis.")
+                print()
     print("Operação concluída! Reinicie para outras operações.")
 
 # Parte 4: Sair + Opções erradas:
