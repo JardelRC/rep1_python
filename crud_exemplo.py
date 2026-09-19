@@ -20,6 +20,7 @@ for livro in biblioteca:
     print("Título:", livro[1])
     print("Autor:", livro[2])
     print("Ano:", livro[3])
+print()
 
 # Pesquisa pelo código:
 busca_codigo = input("Digite o código: ")
@@ -32,6 +33,7 @@ for livro in biblioteca:
         print("Ano:", livro[3])
     else:
         print("Livro não encontrado. Tente novamente.")
+print()
 
 ## Passo 3: Update (alterar um livro):
 busca_codigo = input("Digite o código: ")
@@ -44,3 +46,14 @@ for livro in biblioteca:
 
         print("Livro atualizado!")
 print(biblioteca)
+print()
+
+# Passo 4: Delete (excluir uma entrada):
+busca_codigo = input("Digite o código: ")
+
+for livro in biblioteca:
+    if livro[0] == busca_codigo:
+        biblioteca.remove(livro)
+        print("Livro excluído!!")
+        print(biblioteca)
+        break
