@@ -16,14 +16,3 @@ while opcao != 3:
         print("Você saiu do programa. Reinicie para uma nova operação")
     else:
         print("Opção inválida.")
-
-# Atividade 5: Idade
-
-idade = 0
-
-while idade < 0 or idade > 120:
-    idade = int(input("Insira sua idade:"))
-    if idade < 0 or idade > 120:
-        print("Idade inválida. Tente novamente.")
-    else:
-        print("Sua idade: ", idade)

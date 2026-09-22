@@ -25,3 +25,5 @@ for produto in range(qtd_produtos):
 pesquisa = str(input("Digite um nome de um produto: "))
 if pesquisa in produtos:
     print("Produto encontrado!")
+else:
+    print("Produto não encontrado...")
