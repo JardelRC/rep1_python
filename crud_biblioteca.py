@@ -1,7 +1,8 @@
 biblioteca = []
+
 import datetime
 x = datetime.datetime.now()
-print(x.year)
+print(f"{x.day}/{x.month}/{x.year}")
 ano_max = x.year
 
 while True:
