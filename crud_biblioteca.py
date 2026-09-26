@@ -1,8 +1,14 @@
+def saudacao():
+    print("Olá!")
+
+saudacao()
+
 biblioteca = []
 
 import datetime
 x = datetime.datetime.now()
 print(f"{x.day}/{x.month}/{x.year}")
+saudacao()
 ano_max = x.year
 
 while True:

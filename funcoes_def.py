@@ -9,7 +9,8 @@ def add(a, b):
 
 a = int(input("Insira um número: "))
 b = int(input("insira outro número: "))
-add(a, b)
+soma = add(a, b)
+print(soma)
 
 def saudacao(nome, dia):
     print(f"Olá, {nome}, hoje é {dia}.")
